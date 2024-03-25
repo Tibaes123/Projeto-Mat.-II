@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <aside id="menuOculto" class="menuOculto">
+        <a href="javascript:void(0)" class="btnFechar" onclick="fecharNav()">&times;</a>
+        <a href="#">Fale conosco</a>
+        <a href="#">Categorias</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Configurações</a>
+    </aside>
+    <section id="principal">
+        <header>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <span onclick="abrirNav()">&#9776;</span>
+                </ul>
+            </div>
+        </header>
+        <section class="carrossel">
+            <h1>Categoria 1</h1>
+            <a href="#">ver todos</a>
+            <div class="container">
+                <button class="arrow-left control" aria-label="Previous image">◀</button>
+                <button class="arrow-right control" aria-label="Next Image">▶</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <img src="https://source.unsplash.com/random/250x250/?beach" alt="Beach Image" class="item current-item">
+                        <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" class="item">
+                        <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" class="item">
+                        <img src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" class="item">
+                        <img src="https://source.unsplash.com/random/250x250/?model" alt="Model Image" class="item">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carrossel">
+            <h1>Categoria 2</h1>
+            <a href="#">ver todos</a>
+            <div class="container">
+                <button class="arrow-left control" aria-label="Previous image">◀</button>
+                <button class="arrow-right control" aria-label="Next Image">▶</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <img src="https://source.unsplash.com/random/250x250/?beach" alt="Beach Image" class="item current-item">
+                        <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" class="item">
+                        <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" class="item">
+                        <img src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" class="item">
+                        <img src="https://source.unsplash.com/random/250x250/?model" alt="Model Image" class="item">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

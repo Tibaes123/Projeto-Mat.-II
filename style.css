@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 70px; 
+    z-index: 7;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    background-color: rgb(183, 183, 218);
+    z-index: 8;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: last baseline;
+    height: 100%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+}
+
+li {
+    margin-right: 10px;
+}
+
+a {
+    color: #000000;
+}
+
+.container {
+    position: relative;
+    padding: 12px;
+    max-width: 1200px;
+    margin: 0;
+    overflow: hidden;
+}
+  
+.gallery-wrapper {
+    overflow-x: auto;
+}
+  
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+}
+  
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}
+  
+.arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+  
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+  
+.item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.7;
+}
+  
+.current-item {
+    opacity: 1;
+    border: 3px solid black;
+}
+  
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    flex-direction: column;
+}
+  
+section {
+    background-color: rgb(183, 183, 218);
+}
+
+h1 {
+    flex-direction: column;
+}
+
+.carrossel {
+    padding: 0px 0px 60px;
+    margin-inline-end: 25px;
+}
+
+.menuOculto {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menuOculto a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #888;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover{
+    color: #fff;
+}
+
+.btnFechar {
+    position:absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#principal {
+    transition: margin-left 0.5s;
+}
+
+@media screen and(max-height: 450px){
+    .menuOculto{padding-top: 15px;}
+    .menuOculto a{font-size: 18;}
+}
+
+span{
+    font-size:30px;
+    cursor:pointer;
+}
